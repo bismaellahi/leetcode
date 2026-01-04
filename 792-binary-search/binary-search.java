@@ -1,5 +1,5 @@
-public class Solution {
-    public static int search(int[] nums, int target) {
+class Solution {
+    public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
 
@@ -16,15 +16,5 @@ public class Solution {
         }
 
         return -1; // target not found
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {-1, 0, 3, 5, 9, 12};
-        int target = 9;
-
-        System.out.println("Index: " + search(nums, target)); // Output: 4
-
-        target = 2;
-        System.out.println("Index: " + search(nums, target)); // Output: -1
     }
 }
